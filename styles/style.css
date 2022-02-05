@@ -58,6 +58,10 @@ p {
   width: auto;
 }
 
+.header .botoncolorbg {
+  background-color: #ce5f31;
+}
+
 /* Navigation */
 
 .navigation__list {
@@ -105,6 +109,23 @@ p {
   flex-direction: column;
 }
 
+.botoncolorbg {
+  background-color: #ce5f31;
+}
+.botoncolorbg:hover {
+  background-color: #1a9c00;
+}
+.botoncolorbg:focus {
+  background-color: #6800a5;
+}
+
+.botoncolor {
+  color: red;
+}
+.botoncolor:hover {
+  background-color: black;
+}
+
 /* Alert */
 
 .alert {
@@ -120,7 +141,7 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
