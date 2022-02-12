@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -83,7 +88,6 @@ p {
   border: 5px solid transparent;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -99,11 +103,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -144,7 +146,6 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
@@ -157,7 +158,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -182,11 +182,21 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
+
+.articles {
+  display: flex;
+}
+
+.article:first-child {
+  background-color: lightgray;
+  margin-right: 1rem;
+}
 
 .article {
   margin-bottom: 1rem;
+  padding: 0.7rem;
+  border: 1px solid gray;
 }
 
 .article__title {
@@ -270,5 +280,11 @@ p {
 
   .main {
     padding-right: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero .bikesTitle {
+    font-size: 1.9rem;
   }
 }
